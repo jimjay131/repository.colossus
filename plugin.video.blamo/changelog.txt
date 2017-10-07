@@ -1,3 +1,8 @@
+[B]Version 2.3.3[/B]
+- Changed Image Proxy port
+- Added Context Tools
+- Dizilab Repaired
+
 [B]Version 2.3.2[/B]
 -Fixed and repaired a few scrapers
 
