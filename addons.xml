@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<!--suppress ALL -->
+<addon id="context.ds.tools" version="1.1.0" name="DS Context Tools" provider-name="Mr.Blamo">
+    <requires>
+        <import addon="xbmc.python" version="2.2.0"/>
+        <import addon="plugin.video.blamo"/>
+        <import addon="script.module.deathstreams"/>
+    </requires>
+    <extension point="kodi.context.item" library="default.py">
+      <item>
+        <label>Death Streams Tools...</label>
+        <visible>!StringCompare(ListItem.dbid,)+[StringCompare(ListItem.dbtype,movie)|StringCompare(ListItem.dbtype,tvshow)|StringCompare(ListItem.dbtype,season)|StringCompare(ListItem.dbtype,episode)]</visible>
+      </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Library Context Menu Tools for Death Streams</summary>
+        <description>This addon provides context menu tools for Death Streams</description>
+        <platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="frenchdj.repository" name="frenchdj repository" version="0.0.1" provider-name="frenchdj">
 	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
 		<info compressed="false">http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml</info>
@@ -117,7 +137,7 @@ provider-name="Smurf, Locknload">
 </extension>
 </addon>
 
-<addon id="plugin.video.bennu" name="Bennu" version="17.10.5" provider-name="Bennu">
+<addon id="plugin.video.bennu" name="Bennu" version="17.10.9" provider-name="Bennu">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="repository.colossus" />
@@ -149,7 +169,7 @@ provider-name="Smurf, Locknload">
 </addon>
 
 <addon id="plugin.video.blamo" version="2.3.3" name="Death Streams" provider-name="MR.Blamo">
-    <requires>        
+    <requires>
 		<import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.pyxbmct" version="1.1.4"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -167,25 +187,6 @@ provider-name="Smurf, Locknload">
     <extension point="xbmc.addon.metadata">
         <summary>Stream video from many difference sources, SALTS fork by MR.Blamo</summary>
         <description>This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
-        <platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="context.ds.tools" version="1.1.0" name="DS Context Tools" provider-name="Mr.Blamo">
-    <requires>
-        <import addon="xbmc.python" version="2.2.0"/>
-        <import addon="plugin.video.blamo"/>
-        <import addon="script.module.deathstreams"/>
-    </requires>
-    <extension point="kodi.context.item" library="default.py">        
-      <item>
-        <label>Death Streams Tools...</label>
-        <visible>!StringCompare(ListItem.dbid,)+[StringCompare(ListItem.dbtype,movie)|StringCompare(ListItem.dbtype,tvshow)|StringCompare(ListItem.dbtype,season)|StringCompare(ListItem.dbtype,episode)]</visible>
-      </item>
-    </extension>    
-    <extension point="xbmc.addon.metadata">
-        <summary>Library Context Menu Tools for Death Streams</summary>
-        <description>This addon provides context menu tools for Death Streams</description>
         <platform>all</platform>
 	</extension>
 </addon>
@@ -221,7 +222,7 @@ provider-name="Smurf, Locknload">
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="1.1.19" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="1.1.20" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.covenant" />
@@ -253,7 +254,7 @@ provider-name="Smurf, Locknload">
     			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
     			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>[B]1.1.13[/B][CR]Code cosmetics</news>
+		<news></news>
 	</extension>
 </addon>
 
@@ -469,6 +470,26 @@ provider-name="Smurf, Locknload">
 		<source>https://offshoregit.com/lambda81/lambda-addons</source>
 		<website>https://offshoregit.com/lambda81/</website>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.ororotv" name="Ororo TV" version="3.4.9" provider-name="ororo.tv">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="repository.ororotv" version="1.0.1" />
+		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="script.common.plugin.cache" version="0.9.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.subtitle.module" library="default.py" />
+	<extension point="xbmc.service" library="service.py" start="startup">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Learn English by watching TV shows and movies</summary>
+		<description lang="en">Learn English by watching TV shows and movies</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	</extension>
 </addon>
 
@@ -713,26 +734,6 @@ Skin and code for skin by Demonstratorz</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.ororotv" name="Ororo TV" version="3.4.9" provider-name="ororo.tv">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="repository.ororotv" version="1.0.1" />
-		<import addon="script.module.simplejson" version="2.0.10"/>
-		<import addon="script.common.plugin.cache" version="0.9.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-  <extension point="xbmc.subtitle.module" library="default.py" />
-	<extension point="xbmc.service" library="service.py" start="startup">
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Learn English by watching TV shows and movies</summary>
-		<description lang="en">Learn English by watching TV shows and movies</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	</extension>
-</addon>
-
     <addon id="repository.tvguides" name=".[COLOR red]TV GUIDES[/COLOR] Repository" version="0.0.1" provider-name="locknload">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -786,7 +787,7 @@ Skin and code for skin by Demonstratorz</description>
     </extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="1.00.009" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="1.00.010" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -811,7 +812,7 @@ Skin and code for skin by Demonstratorz</description>
 <addon id="script.tvguide.Assassins" name="[COLOR black].[/COLOR]Assassins [COLOR red]TV Guide[/COLOR]" version="0.0.2" provider-name="Assassins">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
-        <import addon="repository.tvguides" /> 
+        <import addon="repository.tvguides" />
         <import addon="script.module.simplejson" version="3.3.0"/>
         <import addon="script.module.requests" version="2.9.1" />
         <import addon="script.module.dateutil" version="2.4.2" />
@@ -825,7 +826,7 @@ Skin and code for skin by Demonstratorz</description>
     </extension>
     <extension point="xbmc.service" library="service.py" start="login"/>
     <extension point="xbmc.addon.metadata">
-        
+
 		<summary lang="en">Assassins TV Guide.. For support please contact @locknload via twitter.</summary>
 		<description lang="en">[COLOR red]IMPORTANT T&amp;C's [/COLOR] This Guide only provides a selection of Legitimatly Sourced Freeview Channels. On activating these streams you have agreed to having the Correct TV Licence for the Content you are viewing. Assassins TV Guide does not condone any illegitimate content, Adding [COLOR red]ANY[/COLOR] other content is done so at your own discretion. All Logos used are copyright to their respective owners. </description>
         <disclaimer lang="en">Based on tvguide.fullscreen from Primaeval</disclaimer>
