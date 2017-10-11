@@ -1,2 +1,8 @@
+version 0.0.3
+- Skin and notification fixes
+
+version 0.0.2
+- Various fixes and new skins
+
 version 0.0.1
 - Initial Release
