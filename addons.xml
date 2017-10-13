@@ -513,8 +513,8 @@ provider-name="Smurf, Locknload">
 
 <addon id="plugin.video.sportie"
          name="Sportie"
-         version="2.00.007"
-         provider-name="Echo Coder, gujal">
+         version="2.00.008"
+         provider-name="Echo Coder">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="repository.colossus" />
@@ -701,24 +701,6 @@ Skin and code for skin by Demonstratorz</description>
 		<description>Gujal Addons Repository</description>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="repository.lucifer" name="[COLOR red]Lucifer's Repository[/COLOR]" version="0.0.1" provider-name="@LuciferOnKodi">
-    <extension point="xbmc.addon.repository" name="[COLOR red]Lucifer's Repository[/COLOR]">
-    <dir>
-        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
-    </dir>
-        <info compressed="false">https://raw.githubusercontent.com/LuciferOnKodi/repository.lucifer/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/LuciferOnKodi/repository.lucifer/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/LuciferOnKodi/repository.lucifer/master/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Home Of 3rd Party Addons</summary>
-        <description>Proud member of the [COLOR gold]Colossus[/COLOR] team</description>
-        <platform>all</platform>
-    </extension>
 </addon>
 
 <addon id="repository.ororotv" version="1.0.1" name="Ororo repository" provider-name="ororo.tv">
