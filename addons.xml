@@ -137,7 +137,7 @@ provider-name="Smurf, Locknload">
 </extension>
 </addon>
 
-<addon id="plugin.video.bennu" name="Bennu" version="17.10.11" provider-name="Bennu">
+<addon id="plugin.video.bennu" name="Bennu" version="17.10.14" provider-name="Bennu">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="repository.colossus" />
@@ -222,7 +222,7 @@ provider-name="Smurf, Locknload">
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="1.1.21" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="1.1.22" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.covenant" />
@@ -769,7 +769,7 @@ Skin and code for skin by Demonstratorz</description>
     </extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="1.00.011" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="1.00.012" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
