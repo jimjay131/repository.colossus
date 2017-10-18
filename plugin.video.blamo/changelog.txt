@@ -1,3 +1,9 @@
+[B]Version 2.3.4[/B]
+- Minor bug fix due to a scraper
+- Minor fixes to Croatian languages
+- Fixed a few scraper urls
+- Added MkvWatch scraper removed real.
+
 [B]Version 2.3.3[/B]
 - Changed Image Proxy port
 - Added Context Tools
