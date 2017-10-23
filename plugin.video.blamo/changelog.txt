@@ -1,3 +1,9 @@
+[B]Version 2.3.5[/B]
+- Few more Scrapers fixed
+- A few Debrid scrapers fixed
+- Removed tresureen
+- Minor fix to rlsbb
+
 [B]Version 2.3.4[/B]
 - Minor bug fix due to a scraper
 - Minor fixes to Croatian languages
