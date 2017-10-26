@@ -343,7 +343,7 @@ provider-name="Smurf, Locknload">
   </extension>
 </addon>
 
-<addon id="plugin.video.fod" name="[COLOR red]FEAR[/COLOR][COLOR white]OF[/COLOR][COLOR red]THE[/COLOR][COLOR white]DARK[/COLOR]" version="0.0.3" provider-name="Taurus">
+<addon id="plugin.video.fod" name="[COLOR red][B]Fear Of The Dark[/B][/COLOR]" version="0.0.5" provider-name="Taurus">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -357,7 +357,7 @@ provider-name="Smurf, Locknload">
     <import addon="plugin.video.youtube" version="3.0.0"/>
 	<import addon="script.module.urlresolver" />
 	<import addon="script.module.liveresolver" />
-    <import addon="script.module.simplejson" />
+    <import addon="script.module.simplejson" /> 
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>

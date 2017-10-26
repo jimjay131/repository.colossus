@@ -1,1 +1,15 @@
-Fear Of The Dark Release 0.0.1
+0.0.4
+- Addon upgrade
+
+0.0.3
+- Addon Upgrade
+
+0.0.2
+- Addon Upgrade
+
+0.0.1
+- Fear Of The Dark Release
+
+
+ 0.0.1
+Fear Of The Dark Version
