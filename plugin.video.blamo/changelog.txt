@@ -1,3 +1,12 @@
+[B]Version 2.3.6[/B]
+- re added six.py
+- minor bugs fixed
+- added directstream and client py
+- olmovies sorted itself
+- added parsedom
+- changed default source window to directory
+- fixed a few errors in settings
+
 [B]Version 2.3.5[/B]
 - Few more Scrapers fixed
 - A few Debrid scrapers fixed
