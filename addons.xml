@@ -235,7 +235,7 @@ provider-name="Smurf, Locknload">
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="1.1.28" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="1.1.29" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.covenant" />
@@ -783,9 +783,10 @@ Skin and code for skin by Demonstratorz</description>
     </extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="1.00.023" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="1.00.024" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
