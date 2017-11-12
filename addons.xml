@@ -589,7 +589,7 @@ provider-name="Smurf, Locknload">
 
 <addon id="plugin.video.xxx-o-dus"
 	     name="XXX-O-DUS"
-	     version="3.00.032"
+	     version="3.00.033"
 	     provider-name="Echo Coder">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
@@ -850,7 +850,7 @@ Skin and code for skin by Demonstratorz</description>
 	</extension>
 </addon>
 
-<addon id="script.xxxodus.scrapers" name="XXXODUS Scrapers" version="1.00.024" provider-name="Echo Coder">
+<addon id="script.xxxodus.scrapers" name="XXXODUS Scrapers" version="1.00.025" provider-name="Echo Coder">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
 	</requires>
